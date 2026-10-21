@@ -177,6 +177,32 @@ window.ODONTO_ACADEMIC_MODULES=[
         ]
       },
       {
+        "type": "gradebook",
+        "id": "notas-semestre-ed2026",
+        "title": "Notas e média ponderada",
+        "desc": "Pesos e notas editáveis: ajuste às avaliações da sua turma.",
+        "rows": [
+          {
+            "assessment": "Atividade de estudo",
+            "weight": "20",
+            "grade": "8",
+            "status": "Concluído"
+          },
+          {
+            "assessment": "Trabalho aplicado",
+            "weight": "30",
+            "grade": "7.5",
+            "status": "Concluído"
+          },
+          {
+            "assessment": "Avaliação final",
+            "weight": "50",
+            "grade": "",
+            "status": "A realizar"
+          }
+        ]
+      },
+      {
         "type": "table",
         "id": "provas-avaliacoes-ed2026-quadro",
         "title": "Exemplo preenchido",
@@ -390,6 +416,26 @@ window.ODONTO_ACADEMIC_MODULES=[
         ]
       },
       {
+        "type": "attendance",
+        "id": "presenca-semestre-ed2026",
+        "title": "Frequência por disciplina",
+        "desc": "Exemplos de carga e critério para ajustar ao curso.",
+        "rows": [
+          {
+            "discipline": "Anatomia de cabeça e pescoço",
+            "total": "60",
+            "absences": "2",
+            "minimum": "75"
+          },
+          {
+            "discipline": "Anatomia dental",
+            "total": "60",
+            "absences": "2",
+            "minimum": "75"
+          }
+        ]
+      },
+      {
         "type": "table",
         "id": "frequencia-presenca-ed2026-quadro",
         "title": "Exemplo preenchido",
@@ -456,6 +502,24 @@ window.ODONTO_ACADEMIC_MODULES=[
             "tag": "ESTUDO",
             "title": "Atividades Complementares",
             "text": "O registro distingue carga horária declarada no certificado e carga reconhecida no curso. Categoria, evidência e objetivo permitem organizar a documentação."
+          }
+        ]
+      },
+      {
+        "type": "hours",
+        "id": "curriculo-atividades-horas-ed2026",
+        "title": "Horas realizadas e comprovadas",
+        "desc": "Cadastre as exigências informadas pela sua instituição.",
+        "rows": [
+          {
+            "category": "Atividades de formação",
+            "required": "100",
+            "completed": "20"
+          },
+          {
+            "category": "Relatórios e registros",
+            "required": "20",
+            "completed": "5"
           }
         ]
       },
@@ -6304,6 +6368,24 @@ window.ODONTO_ACADEMIC_MODULES=[
             "tag": "ESTUDO",
             "title": "Horas de Estágio",
             "text": "No exemplo, são previstas 120 horas, com 45 concluídas. O progresso é 45/120×100=37,5%, e restam 75 horas. Os registros distinguem carga planejada e reconhecida."
+          }
+        ]
+      },
+      {
+        "type": "hours",
+        "id": "horas-estagio-horas-ed2026",
+        "title": "Horas realizadas e comprovadas",
+        "desc": "Cadastre as exigências informadas pela sua instituição.",
+        "rows": [
+          {
+            "category": "Atividades de formação",
+            "required": "100",
+            "completed": "20"
+          },
+          {
+            "category": "Relatórios e registros",
+            "required": "20",
+            "completed": "5"
           }
         ]
       },
