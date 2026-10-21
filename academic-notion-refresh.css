@@ -1,0 +1,41 @@
+/* Aperfeiçoamento da experiência Notion nos módulos acadêmicos já existentes.
+   Respeita cartões, cores, dados, funcionalidades e estrutura original. */
+.creative-module-workspace{--notion-outline:#e1e8dc;--notion-ink:#33554a;background:#fbfcf8}
+.creative-module-workspace .academic-tool-main{background:radial-gradient(circle at 96% 8%,rgba(236,225,203,.29),transparent 25%),radial-gradient(circle at 5% 42%,rgba(222,240,225,.23),transparent 26%),linear-gradient(90deg,rgba(127,164,134,.045) 1px,transparent 1px),#fcfdf9;background-size:auto,auto,32px 32px,auto}
+.creative-module-workspace .academic-tool-hero{background:radial-gradient(circle at 85% 15%,rgba(255,249,226,.75),transparent 28%),linear-gradient(135deg,var(--tool-soft),#fffefa 57%,var(--tool-mid));border:1px solid #e1e9df;box-shadow:0 12px 29px rgba(58,85,68,.06);border-radius:23px}
+.creative-module-workspace .academic-tool-sidebar{background:linear-gradient(160deg,#f7fbf6,#fffaf5 52%,#f8faf8);box-shadow:5px 0 20px rgba(56,84,64,.025)}
+.creative-module-workspace .academic-tool-sidebar nav button{transition:background .2s,transform .2s;border-radius:11px}
+.creative-module-workspace .academic-tool-sidebar nav button:hover{transform:translateX(3px);background:#eaf4eb}
+.creative-module-workspace .creative-section-shell{border-radius:20px;margin-left:0!important;margin-right:0!important;padding:3px;background:linear-gradient(130deg,rgba(237,221,202,.63),rgba(214,235,221,.48) 40%,rgba(255,255,255,.7))!important;transform:none!important}
+.creative-module-workspace .creative-section-shell>.tool-section{background:rgba(255,255,254,.97);border:1px solid rgba(226,233,224,.85);border-radius:17px;padding:clamp(18px,2.7vw,29px);box-shadow:0 8px 24px rgba(58,80,65,.04)}
+.creative-module-workspace .tool-section-head h2{font-size:clamp(18px,2vw,24px);line-height:1.4;color:#34594a}
+.creative-module-workspace .tool-section-head p{font-size:12px;line-height:1.75}
+.creative-module-workspace .tool-info-card{background:linear-gradient(145deg,#fffefa,#f5f9f2);border:1px solid #e1e9dd;border-radius:15px;padding:19px;min-height:140px}
+.creative-module-workspace .tool-info-card:nth-child(4n+2){background:linear-gradient(145deg,#f6faff,#eef7f4)}
+.creative-module-workspace .tool-info-card:nth-child(4n+3){background:linear-gradient(145deg,#fff8f2,#fffefa)}
+.creative-module-workspace .tool-info-card h3{font-size:14px;line-height:1.5;font-weight:750;color:#3c554b}
+.creative-module-workspace .tool-info-card p{font-size:12px;line-height:1.7;color:#64766b}
+.creative-module-workspace .tool-kanban{display:grid;grid-template-columns:repeat(4,minmax(190px,1fr));gap:12px;overflow-x:auto;scrollbar-width:thin;padding-bottom:8px}
+.creative-module-workspace .kanban-column{min-width:190px;border-radius:15px;padding:13px;border:1px solid #e2e9df;background:#eef5ee;min-height:170px}
+.creative-module-workspace .kanban-column.kanban-tone-0{background:#f6f2ec}
+.creative-module-workspace .kanban-column.kanban-tone-1{background:#f0f5fa}
+.creative-module-workspace .kanban-column.kanban-tone-2{background:#fff6eb}
+.creative-module-workspace .kanban-column.kanban-tone-3{background:#ecf6ee}
+.creative-module-workspace .kanban-column>header{font-size:12px;color:#446153;padding:7px 5px 13px}
+.creative-module-workspace .kanban-column>header b{background:#fffefa;color:#668671;font-size:12px;width:25px;height:25px}
+.creative-module-workspace .kanban-card{border-radius:12px;border-color:#e1e8de;padding:13px;background:#fffefa;box-shadow:0 5px 13px rgba(41,73,58,.05)}
+.creative-module-workspace .kanban-card .kanban-title{font-size:12px!important;font-weight:800;line-height:1.5;color:#385949}
+.creative-module-workspace .kanban-card textarea{min-height:92px;font-size:11px!important;line-height:1.65}
+.creative-module-workspace .kanban-card select{border-radius:9px;padding:9px 7px;font-size:11px;background:#f6faf5}
+.creative-module-workspace .tool-table-wrap{border:1px solid #dfe7df;border-radius:14px;box-shadow:0 4px 12px rgba(53,82,61,.025)}
+.creative-module-workspace .tool-table th{background:#eef5ef;color:#547363;font-size:11px;font-weight:800;padding:12px 10px}
+.creative-module-workspace .tool-table input{padding:12px 10px;color:#415d50;font-size:12px}
+.creative-module-workspace .tool-note-paper{border-radius:15px;overflow:hidden}
+.creative-module-workspace .tool-add-btn{font-size:12px;padding:11px 13px;border-radius:10px}
+.tcc-legacy-return{display:flex;justify-content:space-between;align-items:center;gap:16px;background:#eaf5ed;border-bottom:1px solid #d5e5da;padding:13px 5%;font-size:12px;color:#557261}
+.tcc-legacy-return a{color:#2f7157;font-size:13px;font-weight:800}
+@media(max-width:980px){.creative-module-workspace .tool-kanban{grid-template-columns:repeat(4,minmax(210px,1fr));overflow-x:auto}}
+@media(max-width:760px){.creative-module-workspace .academic-tool-main{padding:16px 11px 50px}.creative-module-workspace .academic-tool-hero{padding:26px 22px;min-height:0;margin-bottom:23px}.creative-module-workspace .creative-section-shell{padding:2px;margin-bottom:13px}.creative-module-workspace .creative-section-shell>.tool-section{padding:17px 13px}.creative-module-workspace .tool-section-head{align-items:start;flex-direction:column;gap:10px}.creative-module-workspace .tool-kanban{display:flex;scroll-snap-type:x mandatory;overflow-x:auto;padding:4px 2px 14px;gap:12px}.creative-module-workspace .kanban-column{min-width:0;flex:0 0 min(82vw,310px);scroll-snap-align:start}.creative-module-workspace .tool-info-card,.creative-module-workspace .tool-info-card.info-shape-0,.creative-module-workspace .tool-info-card.info-shape-3{grid-column:span 12}.tcc-legacy-return{align-items:flex-start;flex-direction:column;gap:4px}}
+
+.tool-back-tcc{display:block;padding:12px 14px;border:1px solid #cbded3;border-radius:11px;background:#eef7ec;color:#285e4a;font-size:12px;font-weight:800;margin:9px 0 18px;text-align:center}.tool-back-tcc:hover{background:#dfefe1}
+

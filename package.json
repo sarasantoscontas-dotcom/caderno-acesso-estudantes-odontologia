@@ -1,0 +1,8 @@
+{
+  "name": "caderno-acesso-estudantes-odontologia",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "check": "node scripts/check.mjs"
+  }
+}

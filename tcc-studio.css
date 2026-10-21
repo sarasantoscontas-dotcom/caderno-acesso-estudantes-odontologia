@@ -1,0 +1,160 @@
+/* Estúdio de TCC — visual independente, responsivo, preserva o sistema acadêmico original. */
+.tcc-studio-workspace{--tcc-ink:#263a38;--tcc-muted:#667873;--tcc-green:#296a5c;--tcc-deep:#183d39;--tcc-paper:#fffcf6;--tcc-line:#dedfd8;display:grid;grid-template-columns:294px minmax(0,1fr);background:#f7f7f1;min-height:calc(100vh - 64px);font-family:"DM Sans",sans-serif;color:var(--tcc-ink)}
+.tcc-studio-workspace *{box-sizing:border-box}
+.tcc-studio-workspace button{cursor:pointer;font:inherit}
+.tcc-studio-sidebar{position:sticky;top:64px;align-self:start;height:calc(100vh - 64px);background:#fdfdf9;border-right:1px solid #e4e9de;overflow-y:auto;scrollbar-width:thin;z-index:3;box-shadow:6px 0 26px rgba(44,75,62,.025)}
+.tcc-studio-sidehead{padding:25px 20px 13px;border-bottom:1px dashed #e2e5df}
+.tcc-studio-sidehead>a{display:inline-block;font-size:12px;color:#56776d;margin-bottom:24px}
+.tcc-studio-logo{font:700 31px "Libre Baskerville",serif;color:#285c51;letter-spacing:-2px}
+.tcc-studio-logo span{color:#c79b75;font-size:20px;vertical-align:top;padding-left:2px}
+.tcc-studio-logo small{font:700 10px "DM Sans",sans-serif;letter-spacing:.2em;padding-left:7px;color:#94857e}
+.tcc-studio-sidehead p{font:20px "Caveat",cursive;margin:5px 0;color:#846d70}
+.tcc-side-search{display:flex;align-items:center;gap:8px;background:#f4f6ef;border:1px solid #e0e5db;border-radius:11px;margin:15px 14px;padding:7px 12px}
+.tcc-side-search span{font-size:19px;color:#738c81}
+.tcc-side-search input{border:none;outline:none;background:transparent;font-size:12px;min-width:0;width:100%;color:#35594e;padding:5px 0}
+.tcc-studio-nav{padding:0 10px 22px}
+.tcc-side-group{display:flex;justify-content:space-between;align-items:center;margin:22px 9px 8px;color:#82958c;font-size:9px;letter-spacing:.11em;font-weight:800}
+.tcc-side-group small{background:#f1f4ed;color:#61836e;border-radius:8px;padding:3px 7px;font-size:9px}
+.tcc-side-item{width:100%;display:flex;align-items:center;gap:11px;background:transparent;border:1px solid transparent;border-radius:10px;padding:10px 12px;text-align:left;color:#536860;font-size:12px}
+.tcc-side-item span{font-size:17px;font-weight:600;color:#6a8e80}
+.tcc-side-item b{flex:1;font-weight:600;line-height:1.4}
+.tcc-side-item i{font-style:normal;font-size:14px;opacity:0;transition:opacity .15s}
+.tcc-side-item:hover,.tcc-side-item:focus-visible{background:#f2f6ed}
+.tcc-side-item:hover i,.tcc-side-item.is-current i{opacity:1}
+.tcc-side-item.is-current{background:#e5f1e9;color:#226349;border-color:#d2e5d8;box-shadow:inset 3px 0 #45876c}
+.tcc-side-item.top{font-size:13px;padding:12px}
+.tcc-legacy-link{display:block;margin:0 14px 25px;padding:12px 14px;background:#f4f0ec;border-radius:11px;font-size:11px;color:#755e54}
+.tcc-studio-main{min-width:0;max-width:100%;background:linear-gradient(90deg,rgba(141,170,139,.05) 1px,transparent 1px),radial-gradient(circle at 94% 7%,rgba(235,200,178,.29),transparent 24%),#f7f8f4;background-size:35px 35px,auto,auto}
+.tcc-studio-topline{display:flex;justify-content:space-between;gap:10px;padding:18px clamp(18px,3.7vw,52px);background:#fcfdf9;color:#70877d;font-size:10px;font-weight:700;letter-spacing:.13em;border-bottom:1px solid #e7ece4}
+.tcc-toolbar{display:flex;flex-wrap:wrap;gap:8px;padding:14px clamp(18px,3.7vw,52px);background:#fffefa;border-bottom:1px solid #e8e9e1;position:sticky;top:64px;z-index:2}
+.tcc-toolbar button{border:1px solid #dce5dd;background:#fff;border-radius:10px;padding:9px 14px;font-size:12px;color:#375a4d;font-weight:700}
+.tcc-toolbar button:hover{background:#eaf5ea;border-color:#9dc6ac}
+.tcc-toolbar button[data-export="full"]{background:#2b6959;color:white;border-color:#2b6959}
+.tcc-studio-content{max-width:1390px;margin:0 auto;padding:33px clamp(18px,3.7vw,52px) 78px}
+.tcc-studio-hero{position:relative;overflow:hidden;border-radius:24px;padding:clamp(27px,5vw,67px);min-height:330px;background:radial-gradient(circle at 88% 23%,rgba(245,211,161,.38) 0 4%,transparent 4.5%),radial-gradient(circle at 80% 80%,rgba(244,255,237,.13),transparent 37%),linear-gradient(125deg,#24594f,#337c6c 62%,#70a18b);color:white;box-shadow:0 18px 38px rgba(29,73,55,.15)}
+.tcc-studio-hero:before{content:"✦";position:absolute;right:8%;top:9%;font:175px "Caveat",cursive;color:rgba(255,255,255,.1);transform:rotate(-20deg)}
+.tcc-studio-hero:after{content:"";position:absolute;right:6%;bottom:-65px;width:330px;height:330px;border:2px dashed rgba(255,255,255,.25);border-radius:50%;pointer-events:none}
+.tcc-hero-washi{position:absolute;top:-6px;left:13%;width:155px;height:24px;background:rgba(255,239,193,.35);transform:rotate(-6deg)}
+.tcc-studio-kicker{font-weight:800;letter-spacing:.19em;font-size:10px;color:#e4f4d9}
+.tcc-studio-hero h1{font:clamp(37px,5vw,69px)/1.18 "Libre Baskerville",serif;margin:17px 0 10px;max-width:760px;letter-spacing:-.025em}
+.tcc-studio-hero h1 em{font:500 clamp(44px,5.2vw,75px) "Caveat",cursive;color:#ffdfbf;white-space:nowrap}
+.tcc-studio-hero h2{font-size:clamp(17px,2vw,24px);line-height:1.45;max-width:870px;margin:15px 0}
+.tcc-studio-hero p{font-size:13px;line-height:1.85;max-width:740px;color:#e5f5ed}
+.tcc-hero-tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:23px}
+.tcc-hero-tags span{padding:8px 12px;border:1px solid rgba(255,255,255,.32);background:rgba(255,255,255,.14);font-size:11px;border-radius:30px}
+.tcc-stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:23px 0 38px}
+.tcc-stats article{background:#fffefb;border:1px solid #e8e9df;border-radius:16px;padding:19px;box-shadow:0 5px 20px rgba(31,71,52,.035)}
+.tcc-stats small,.tcc-stats span{display:block;font-size:10px;color:#82938b;letter-spacing:.06em}
+.tcc-stats strong{font:700 32px "Libre Baskerville",serif;color:#256b58;display:block;margin:7px 0}
+.tcc-section-heading{margin:35px 0 18px}
+.tcc-section-heading>span{font-size:10px;letter-spacing:.15em;font-weight:800;color:#3c7a6a}
+.tcc-section-heading h2{font:28px/1.4 "Libre Baskerville",serif;margin:9px 0;color:#2a4540}
+.tcc-section-heading p{font-size:12px;line-height:1.7;color:#708178}
+.tcc-featured-grid{display:grid;grid-template-columns:1.5fr .8fr;gap:16px}
+.tcc-featured-grid article{border-radius:19px;border:1px solid #e1e8d8;padding:28px;min-width:0}
+.tcc-featured-main{background:#fffdfa;box-shadow:0 6px 19px rgba(51,83,69,.04)}
+.tcc-featured-aside{background:linear-gradient(130deg,#fff0e5,#fcf4e8)}
+.tcc-featured-grid article>span{font-size:10px;font-weight:800;letter-spacing:.14em;color:#57907e}
+.tcc-featured-grid h3{font:24px/1.4 "Libre Baskerville",serif}
+.tcc-featured-grid p{font-size:12px;line-height:1.8;color:#64736d}
+.tcc-featured-grid button,.tcc-linked-content button,.tcc-featured-grid a{border:none;color:#276a54;background:transparent;font-size:12px;font-weight:800;padding:10px 0}
+.tcc-chapters-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px}
+.tcc-chapter-card{border:1px solid #e6e5dd;background:#fffefa;border-radius:16px;padding:22px;display:flex;flex-direction:column;text-align:left;gap:10px;min-height:190px;box-shadow:0 3px 14px rgba(42,70,54,.03);transition:transform .15s,border-color .15s}
+.tcc-chapter-card:hover{transform:translateY(-3px);border-color:#a3c7ae}
+.tcc-chapter-card span{font-size:9px;letter-spacing:.1em;color:#619082;font-weight:800}
+.tcc-chapter-card b{font:17px/1.4 "Libre Baskerville",serif;color:#354e46}
+.tcc-chapter-card p{font-size:11px;line-height:1.6;color:#7a867e;flex:1}
+.tcc-chapter-card em{font-style:normal;font-size:11px;font-weight:800;color:#2e8062}
+.tcc-preview-features{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.tcc-preview-features button{border:1px solid #e2e5da;background:#fff;border-radius:13px;padding:17px;text-align:left;display:grid;gap:8px}
+.tcc-preview-features span{font-size:22px;color:#65a08a}
+.tcc-preview-features b{font-size:12px;color:#365c4b}
+.tcc-preview-features small{color:#89958c}
+.tcc-callout{border:1px dashed #b8cfbb;background:#f0f6ee;border-radius:15px;padding:20px;margin-top:32px;line-height:1.65}
+.tcc-callout b{font-size:14px}
+.tcc-callout p{font-size:12px;color:#6e8074}
+.tcc-callout a{font-size:12px;font-weight:800;color:#226c57}
+.tcc-reading-cover{position:relative;border-radius:20px;background:linear-gradient(125deg,#dbe9e2,#f8eee3);padding:33px clamp(20px,5vw,55px);min-height:180px}
+.tcc-reading-cover span{font-size:10px;letter-spacing:.14em;color:#53806b;font-weight:800}
+.tcc-reading-cover h1{font:clamp(25px,3vw,39px) "Libre Baskerville",serif;color:#28564c;line-height:1.4;max-width:870px}
+.tcc-reading-cover p{font-size:12px;color:#667e71}
+.tcc-document-paper{background:var(--tcc-paper);padding:clamp(23px,5vw,68px);border:1px solid #e8e1d5;box-shadow:0 14px 28px rgba(72,74,59,.06);margin:-16px auto 0;position:relative;max-width:990px;border-radius:4px 4px 20px 20px;background-image:linear-gradient(90deg,transparent 42px,rgba(210,156,149,.10) 43px,transparent 44px)}
+.tcc-document-top{display:flex;justify-content:space-between;gap:10px;border-bottom:1px solid #eae4dd;padding-bottom:18px;color:#89a093;font-size:10px;letter-spacing:.1em;font-weight:800}
+.tcc-document-read{font-family:"Libre Baskerville",Georgia,serif;color:#303f39;font-size:clamp(13px,1.3vw,16px);line-height:2;letter-spacing:.005em;overflow-wrap:anywhere}
+.tcc-document-read p{white-space:pre-line;margin:24px 0}
+.tcc-hardbreak{display:block;margin-bottom:7px}
+.tcc-document-editor{width:100%;min-height:650px;resize:vertical;font:15px/1.85 Georgia,serif;background:#fffdf7;border:1px solid #c7d8cc;border-radius:8px;padding:18px;color:#283f37}
+.tcc-document-actions{display:flex;align-items:center;gap:10px;flex-wrap:wrap;border-top:1px solid #ede6db;padding-top:19px;margin-top:26px}
+.tcc-document-actions button,.tcc-next-buttons button{background:#eaf3e9;border:1px solid #cbded0;color:#285e4c;border-radius:10px;padding:11px 16px;font-size:12px;font-weight:800}
+.tcc-document-actions span{font-size:10px;color:#8a918a}
+.tcc-next-buttons{max-width:990px;display:flex;justify-content:space-between;gap:10px;margin:25px auto}
+.tcc-index-header{background:linear-gradient(120deg,#e0ede5,#f6f1e9);padding:35px;border-radius:19px;margin-bottom:20px;border:1px solid #d5e5d9}
+.tcc-index-header span,.tcc-feature-mainhead span{color:#538877;font-size:10px;letter-spacing:.14em;font-weight:800}
+.tcc-index-header h1,.tcc-feature-mainhead h1{font:clamp(28px,4vw,45px) "Libre Baskerville",serif;color:#294b40;line-height:1.35;margin:10px 0}
+.tcc-index-header p,.tcc-feature-mainhead p{font-size:13px;line-height:1.7;color:#688277}
+.tcc-source-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.tcc-source-card{display:grid;gap:10px;padding:25px;background:#fffefa;border:1px solid #e4e7de;border-radius:16px}
+.tcc-source-card>span{font-size:10px;font-weight:800;letter-spacing:.12em;color:#569279}
+.tcc-source-card h3{font:19px/1.45 "Libre Baskerville",serif;margin:0}
+.tcc-source-card p,.tcc-source-card small{margin:0;font-size:12px;line-height:1.6;color:#72857a}
+.tcc-source-card a{font-size:12px;font-weight:800;color:#237459;text-decoration:underline;text-underline-offset:4px}
+.tcc-feature-mainhead{padding:28px;border:1px solid #dcebdc;background:linear-gradient(120deg,#f7fbee,#eaf5e9);border-radius:18px;margin-bottom:18px}
+.tcc-feature-layout{display:grid;grid-template-columns:minmax(0,1.65fr) minmax(240px,.8fr);gap:17px}
+.tcc-feature-document{min-width:0;background:#fffefa;border:1px solid #e2e4d9;border-radius:18px;padding:clamp(19px,3vw,33px)}
+.tcc-card-cap{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:20px}
+.tcc-card-cap span,.tcc-context-card>span{font-size:10px;letter-spacing:.11em;font-weight:800;color:#679482}
+.tcc-card-cap button{border:1px solid #dce6da;border-radius:9px;background:#f7faf4;color:#527261;padding:8px;font-size:11px}
+.tcc-feature-prose p{font-size:14px;line-height:1.9;color:#43554b}
+.tcc-field-label{display:block;font-size:11px;font-weight:800;margin:25px 0 9px;color:#527968}
+.tcc-feature-document textarea{width:100%;border:1px solid #d6e3d7;resize:vertical;border-radius:10px;padding:15px;background:#fdfefa;color:#33463c;line-height:1.75;font-size:13px;min-height:148px}
+.tcc-feature-document textarea:focus{outline:2px solid #9dcdb2}
+.tcc-feature-document #tcc-feature-text{min-height:195px}
+.tcc-feature-document .tcc-feature-notes{min-height:125px}
+.tcc-linked-content{margin-top:24px;background:#f1f6ed;padding:17px;border-radius:12px;display:grid;gap:10px}
+.tcc-linked-content small{font-size:10px;font-weight:800;letter-spacing:.11em;color:#7d9682}
+.tcc-linked-content b{font-size:13px}
+.tcc-feature-context{display:grid;align-content:start;gap:14px}
+.tcc-context-card{padding:22px;border-radius:17px;background:#fff1e7;border:1px solid #f0e1d5}
+.tcc-context-card h3{font:21px "Libre Baskerville",serif}
+.tcc-context-card p{font-size:12px;line-height:1.9;color:#796d63}
+.tcc-context-card.dark{background:linear-gradient(130deg,#22594e,#3a7867);color:white;border-color:#2b6455}
+.tcc-context-card.dark p{color:#e4f4eb}
+.tcc-context-card.dark>span{color:#c1dfc9}
+.tcc-mini-pills{display:flex;flex-wrap:wrap;gap:8px}
+.tcc-mini-pills i{font-style:normal;font-size:10px;padding:7px 9px;background:#fff9f2;border-radius:15px}
+.tcc-kanban{display:grid;grid-template-columns:repeat(4,minmax(195px,1fr));gap:10px;overflow-x:auto;scrollbar-width:thin;padding-bottom:12px}
+.tcc-kanban-column{border-radius:14px;background:#eff3eb;border:1px solid #e0e4da;min-height:180px;padding:12px;min-width:195px}
+.tcc-kanban-column.tone-1{background:#edf2f5}
+.tcc-kanban-column.tone-2{background:#faf3e9}
+.tcc-kanban-column.tone-3{background:#eaf6ee}
+.tcc-kanban-colhead{display:flex;justify-content:space-between;gap:8px;font-size:12px;color:#4d6555;margin:3px 3px 15px}
+.tcc-kanban-colhead small{border-radius:99px;background:white;padding:4px 8px}
+.tcc-kanban-cardstack{display:grid;gap:9px}
+.tcc-kanban-card{padding:12px;border-radius:10px;background:#fffefa;box-shadow:0 3px 10px rgba(41,75,60,.06);display:grid;gap:8px}
+.tcc-kanban-card label{font-size:9px;color:#819486;letter-spacing:.11em}
+.tcc-kanban-card label input{display:block;width:100%;background:#eff5ec;border:none;border-radius:4px;font-size:9px;font-weight:800;color:#57836f;padding:5px}
+.tcc-kanban-card input.tcc-kanban-title{border:1px solid transparent;outline:none;width:100%;font-size:12px;line-height:1.6;font-weight:800;background:transparent;color:#40554c}
+.tcc-kanban-card textarea{resize:vertical;min-height:90px;width:100%;font-size:11px;line-height:1.5;border:1px solid transparent;background:transparent;color:#64746a}
+.tcc-kanban-card input:focus,.tcc-kanban-card textarea:focus{border-color:#a7cdb0}
+.tcc-kanban-card select{font-size:11px;border:1px solid #d4ddd5;padding:7px 8px;width:100%;border-radius:8px;background:#f9fcf8}
+.tcc-remove-card{background:none;border:none;text-align:right;color:#a2817a;font-size:10px}
+.tcc-add-card{border:1px dashed #a8c9b7;padding:13px 16px;border-radius:10px;background:#f8fbf7;color:#2b8063;font-size:12px;font-weight:800}
+.tcc-board-directory{display:grid;gap:20px}
+.tcc-board-directory section{background:#fffefa;border:1px solid #e5e8df;border-radius:16px;padding:20px}
+.tcc-board-directory h2{font:22px "Libre Baskerville",serif}
+.tcc-board-directory section>div{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px}
+.tcc-board-directory button{background:#f6f8f2;border:1px solid #e0e8dd;padding:14px;border-radius:10px;display:flex;align-items:flex-start;gap:8px;flex-direction:column;text-align:left}
+.tcc-board-directory button span{color:#3b9770;font-size:18px}
+.tcc-board-directory button b{color:#405d50;font-size:12px}
+.tcc-board-directory button small{font-size:10px;color:#8b988a}
+.tcc-studio-footer{display:flex;justify-content:space-between;gap:10px;padding:23px clamp(18px,3.7vw,52px);font-size:11px;color:#7c9386;border-top:1px solid #e3e9df;background:#fffefb}
+.tcc-studio-footer b{letter-spacing:.1em}
+@media(max-width:1190px){.tcc-studio-workspace{grid-template-columns:250px minmax(0,1fr)}.tcc-preview-features{grid-template-columns:repeat(2,minmax(0,1fr))}.tcc-featured-grid{grid-template-columns:1fr 1fr}.tcc-chapters-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.tcc-feature-layout{grid-template-columns:1fr}}
+@media(max-width:800px){.tcc-studio-workspace{display:block}.tcc-studio-sidebar{position:relative;top:auto;height:auto;max-height:none;overflow:visible;border-bottom:1px solid #d8e4d8}.tcc-studio-sidehead{padding:14px 17px 9px}.tcc-studio-sidehead>a{margin-bottom:7px}.tcc-studio-logo{font-size:23px}.tcc-studio-sidehead p{margin:2px}.tcc-side-search{margin:10px 15px}.tcc-studio-nav{display:flex;overflow-x:auto;scrollbar-width:thin;gap:7px;max-width:100%;padding:5px 15px 12px}.tcc-studio-nav>.tcc-side-group{display:none}.tcc-side-item,.tcc-side-item.top{flex:0 0 auto;width:auto;white-space:nowrap;padding:9px 12px;border:1px solid #e3e8dc;background:#fff;border-radius:11px}.tcc-side-item b{font-size:11px;max-width:170px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.tcc-side-item i{display:none}.tcc-legacy-link{margin:0 15px 10px;padding:9px}.tcc-toolbar{top:64px;overflow-x:auto;flex-wrap:nowrap;scrollbar-width:none;padding:10px 15px}.tcc-toolbar button{flex:0 0 auto}.tcc-studio-topline{padding:12px 16px}.tcc-studio-content{padding:18px 15px 50px}.tcc-stats{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.tcc-stats article{padding:15px}.tcc-stats strong{font-size:26px}.tcc-featured-grid{grid-template-columns:1fr}.tcc-chapters-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.tcc-feature-layout{grid-template-columns:1fr}.tcc-kanban{grid-auto-columns:78%;grid-auto-flow:column;grid-template-columns:none;scroll-snap-type:x mandatory}.tcc-kanban-column{min-width:0;scroll-snap-align:start}.tcc-board-directory section>div{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:530px){.tcc-studio-hero{padding:27px 20px}.tcc-studio-hero h1{font-size:34px}.tcc-studio-hero h1 em{font-size:43px;white-space:normal}.tcc-studio-hero h2{font-size:15px}.tcc-studio-hero p{font-size:11px;line-height:1.8}.tcc-studio-content{padding:12px 11px 42px}.tcc-stats article{padding:12px}.tcc-stats strong{font-size:25px}.tcc-section-heading h2{font-size:24px}.tcc-chapters-grid,.tcc-source-grid,.tcc-preview-features,.tcc-board-directory section>div{grid-template-columns:1fr}.tcc-featured-grid article{padding:20px}.tcc-document-paper{padding:20px 16px}.tcc-reading-cover{padding:20px}.tcc-reading-cover h1{font-size:23px}.tcc-document-read{font-size:13px}.tcc-kanban{grid-auto-columns:90%}.tcc-studio-topline{font-size:9px;letter-spacing:0}.tcc-studio-footer{flex-direction:column}.tcc-document-actions button,.tcc-next-buttons button{padding:10px 12px}}
+@media print{.tcc-studio-sidebar,.tcc-toolbar,.tcc-studio-topline,.tcc-document-actions,.tcc-next-buttons,.tcc-studio-footer{display:none!important}.tcc-studio-workspace{display:block!important}.tcc-studio-main{background:#fff}.tcc-studio-content{padding:0}.tcc-document-paper{box-shadow:none;border:0;margin:0;padding:0;background:#fff}.tcc-document-read{font-size:12pt;line-height:1.6}.tcc-reading-cover{background:#fff;min-height:0;padding:10px}.tcc-feature-context,.tcc-kanban{display:none!important}}
+
+/* A navegação de celular mantém capítulos e ferramentas alcançáveis sem rolagem lateral interminável. */
+@media(max-width:800px){.tcc-studio-nav{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));max-height:245px;overflow-y:auto;overflow-x:hidden;scrollbar-width:thin;gap:6px;padding:5px 12px 13px}.tcc-studio-nav>.tcc-side-group{display:flex;grid-column:1/-1;margin:13px 5px 3px}.tcc-studio-nav>.tcc-side-item{width:100%;min-width:0;flex:none;white-space:normal;display:flex}.tcc-studio-nav>.tcc-side-item b{white-space:normal;max-width:none;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;line-height:1.35}.tcc-studio-nav>.tcc-side-item span{flex:0 0 auto}}
+@media(max-width:430px){.tcc-studio-nav{grid-template-columns:1fr 1fr;max-height:220px}.tcc-studio-nav>.tcc-side-item{padding:8px;min-height:42px}.tcc-studio-nav>.tcc-side-item b{font-size:10px}}
+

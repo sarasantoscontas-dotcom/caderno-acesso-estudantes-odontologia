@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f4f7f8">
+<meta name="description" content="Sistema de estudos de Odontologia: resumos, flashcards, referências, estágio, TCC e organização acadêmica.">
+<title>Caderno do Estudante de Odontologia</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+
+
+<link rel="icon" href="./logo.svg" type="image/svg+xml">
+
+
+
+
+
+<link href="./styles.css" rel="stylesheet"><link href="./odontologia.css" rel="stylesheet"><link href="./tcc-studio.css" rel="stylesheet"><link href="./academic-notion-refresh.css" rel="stylesheet"><link href="./reference-library-refresh.css" rel="stylesheet"><link href="./odontologia-mvc-academic.css" rel="stylesheet"><link href="./odontologia-theme.css" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<a class="skip-link" href="#app">Pular para o conteúdo</a>
+<header class="topbar">
+  <a class="brand" href="#home">
+    <img class="odontologia-brand-mark" src="./logo.svg" alt="">
+    <span><strong>Caderno de Odontologia</strong><small>Faculdade</small></span>
+  </a>
+  <div class="breadcrumbs" id="breadcrumbs"></div>
+  <div class="top-actions">
+    <button id="searchBtn" class="top-button">⌕ Buscar</button>
+    <button id="profileBtn" class="top-button profile-button" hidden></button>
+    <a class="top-button home-link" href="#home">Início</a>
+  </div>
+</header>
+<main id="app" tabindex="-1"></main>
+
+<div class="modal" id="searchModal" hidden>
+  <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="searchTitle">
+    <div class="modal-head">
+      <div><small>BUSCA GERAL</small><strong id="searchTitle">Encontre qualquer conteúdo</strong></div>
+      <button id="closeSearch" aria-label="Fechar">×</button>
+    </div>
+    <input id="globalSearch" type="search" placeholder="Ex.: anatomia dental, cariologia, periodontia, materiais, saúde bucal">
+    <div class="seodontologia-results" id="searchResults"></div>
+  </div>
+</div>
+
+<div class="toast" id="toast" hidden></div>
+
+<div class="profile-modal" id="profileModal" hidden>
+  <section class="profile-card" role="dialog" aria-modal="true" aria-labelledby="profileTitle">
+    <div class="profile-card-head">
+      <div>
+        <span>CADERNO DO ESTUDANTE DE ARQUITETURA</span>
+        <h2 id="profileTitle">Meu Caderno de Odontologia</h2>
+        <p>Entre com seu e-mail para abrir seu espaço de estudos.</p>
+      </div>
+      <button id="profileClose" aria-label="Fechar">×</button>
+    </div>
+    <form class="profile-form" id="profileForm">
+      <label for="profileEmail">Seu e-mail</label>
+      <input id="profileEmail" type="email" autocomplete="email" placeholder="Seu e-mail" required>
+      <button class="profile-submit" type="submit">Entrar no meu caderno</button>
+      <p class="profile-error" id="profileError"></p>
+    </form>
+  </section>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="odontologia-footer"><b>Caderno do Estudante de Odontologia</b><p>Seu caderno para estudar e organizar a formação em Odontologia.</p><button id="exportBackup">Baixar meus registros</button><button id="importBackup">Restaurar meus registros</button><input type="file" id="backupFile" accept="application/json,.json" hidden><span class="backup-status" id="backupStatus" role="status"></span></footer>
+
+<script src="./profile-store.js"></script><script src="./data.js"></script><script src="./flashcards.js"></script><script src="./references.js"></script><script src="./academic-modules.js"></script><script src="./academic-modules-ui.js"></script><script src="./app.js"></script><script src="./odontologia-tools.js"></script></body>
+</html>
