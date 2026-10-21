@@ -1,0 +1,12 @@
+/* Reading, touch targets and narrow-screen tables */
+ html,body{max-width:100%;overflow-x:clip} *,*::before,*::after{box-sizing:border-box}
+ .academic-main,.academic-tool-main,.notion-summary-page,.page{min-width:0}
+ .notion-content-block p,.tool-info-card p,.reference-book-info p{line-height:1.75;overflow-wrap:anywhere}
+ .notion-table-shell,.tool-table-wrap{overflow-x:auto;max-width:100%;overscroll-behavior-inline:contain}
+ .ready-question{background:#fffdf8;border:1px solid #d9dedc;border-radius:20px;padding:clamp(18px,4vw,40px);max-width:900px;margin:20px auto;color:#263735}
+ .ready-question h2{font-size:clamp(22px,4vw,32px);line-height:1.45}.ready-question p{font-size:16px;line-height:1.8}
+ .ready-question details{border:1px solid #d3dfda;padding:18px;border-radius:12px;margin:24px 0}.ready-question summary{cursor:pointer;font-weight:700;min-height:44px}
+ .ready-question-actions{display:flex;gap:12px;flex-wrap:wrap}.ready-question button{min-height:44px;padding:12px 20px;border-radius:10px;border:1px solid #9db5aa;background:#eff6f0;color:#263735;cursor:pointer}
+ @media(max-width:700px){.notion-summary-head h1,.academic-tool-hero h1{font-size:clamp(27px,8vw,40px);overflow-wrap:anywhere}.notion-content-block p,.tool-info-card p,.reference-book-info p{font-size:16px!important}.tool-info-grid,.notion-columns,.reference-book-grid,.reference-context-grid{grid-template-columns:1fr!important}.academic-sidebar,.academic-tool-sidebar{position:relative!important;max-height:none!important;width:100%!important}.academic-workspace,.academic-tool-workspace{display:block!important}.academic-main,.academic-tool-main{padding:14px!important}.tool-table-wrap input,.tool-table-wrap textarea{min-width:150px;font-size:16px!important}button,.top-button{min-height:44px}.topbar{flex-wrap:wrap}.breadcrumbs{max-width:100%;overflow:hidden}.tool-section,.notion-content-block{padding:18px!important} .reference-book-cover{max-height:140px}.tool-info-card{padding:18px!important}}
+ @media print{.academic-sidebar,.academic-tool-sidebar,.topbar,.article-actions,.ready-question-actions{display:none!important}.academic-main,.academic-tool-main{width:100%!important;margin:0!important}.notion-content-block,.tool-info-card{break-inside:avoid}}
+ 

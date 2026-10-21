@@ -3,11 +3,11 @@
 Sistema independente inspirado na estrutura do sistema de Enfermagem. Nenhum repositório de referência foi modificado.
 
 ## Conteúdo
-- 25 disciplinas, 50 resumos e 200 flashcards específicos de Odontologia.
-- 108 módulos de estudos, prática, organização, pesquisa, estágio, carreira e vida pessoal.
+- 25 disciplinas, 75 resumos e 200 flashcards específicos de Odontologia.
+- 107 módulos de estudos, prática, organização, pesquisa, estágio, carreira e vida pessoal.
 - TCC com dez etapas e quarenta ferramentas preenchidas com exemplo de Odontologia.
 - Tabelas, notas, checklists e Kanban editáveis, médias ponderadas, frequência e horas.
-- Biblioteca de fontes, PDF pessoal, quizzes comentados, impressão de resumos e ferramentas de estudo.
+- Referências bibliográficas em texto, casos comentados, impressão de resumos e ferramentas de estudo.
 - Backup e restauração dos registros em JSON.
 
 ## Acesso e armazenamento
@@ -18,3 +18,4 @@ Servidor estático na raiz. Na Vercel, preset Other, saída na raiz, sem instala
 
 ## Uso acadêmico
 Conteúdos autorais de estudo, com fontes institucionais identificadas. Exemplos são acadêmicos. Atividades profissionais e decisões de intervenção dependem de formação, supervisão e critérios próprios do contexto.
+
